@@ -3,7 +3,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -38,6 +38,7 @@ a {
   padding: 0 5px;
   font-size: 14px;
   transition: all 0.3s;
+  font-size: 14px;
 }
 
 .header ul li a:hover {
@@ -80,9 +81,9 @@ a {
   padding: 20px;
 }
 
-.wrapper .main ul {}
+.wrapper ul.list {}
 
-.wrapper .main ul li {
+.wrapper ul.list li {
   display: inline-block;
   height: 288px;
   width: 288px;
@@ -92,12 +93,12 @@ a {
   box-shadow: 0 0 2px rgba(150,150,150,0.5);
 }
 
-.wrapper .main ul li img {
+.wrapper ul.list li img {
   width: 288px;
   height: 288px;
 }
 
-.wrapper .main ul li a {
+.wrapper ul.list li a {
   display: block;
   height: 30px;
   line-height: 30px;
@@ -112,12 +113,12 @@ a {
   transition: all 0.3s;
 }
 
-.wrapper .main ul li:hover a {
+.wrapper ul.list li:hover a {
   background: #000;
   color: #fff;
 }
 
-.wrapper .main ul li p {
+.wrapper ul.list li p {
   background: rgba(255,255,255,0.9);
   color: #000;
   height: 200px;
@@ -132,7 +133,49 @@ a {
   transition: all 0.3s;
 }
 
-.wrapper .main ul li:hover p {
+.wrapper ul.list li:hover p {
   display: block;
   opacity: 1;
+}
+
+
+/* category list*/
+
+.wrapper .category {
+   float: left;
+   width: 25%;
+   position: relative;
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+.wrapper .category h3 {
+  font-size: 14px;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.wrapper .category ul {
+  margin-bottom: 20px;
+}
+
+.wrapper .category ul li a {
+  display: block;
+  line-height: 26px;
+  padding: 5px 0;
+  color: #999;
+  font-weight: 100;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.wrapper .category ul li a:hover {
+  color: #26bbad;
+}
+
+.wrapper .goods-list {
+  float: left;
+  width: 75%;
+  position: relative;
 }
